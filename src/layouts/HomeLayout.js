@@ -5,9 +5,10 @@ import Navbar from "../pages/Shared/Navbar";
 const HomeLayout = () => {
   return (
     <div className="relative">
-      <div className="fixed top-0 left-0 right-0">
+      {/* <div className="fixed top-0 left-0 right-0">
         <Navbar />
-      </div>
+      </div> */}
+      <Navbar />
       <Outlet />
     </div>
   );
