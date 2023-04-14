@@ -7,7 +7,7 @@ const Welcome = () => {
     return (
         <div className="hero mt-12">
             <div className="hero-content flex-col lg:flex-row-reverse">
-                <div className="text-center lg:text-left lg:ml-10 ">
+                <div className="text-center lg:text-left lg:ml-10 text-xl">
                     <h1 className="text-5xl font-semibold">Welcome to Joypurhat Diagnostic & Dialysis Centre</h1>
                     <p className="py-4">With the touch of advanced technology, we are always at your side with the assurance of the latest health care.</p>
                     <p className="py-4">In Joypurhat, we are the first to do dialysis by Germany’s world famous Fresenius dialysis machine. Our patients have very praised for our service.
