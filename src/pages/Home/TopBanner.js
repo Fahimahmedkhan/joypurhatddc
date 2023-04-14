@@ -1,28 +1,69 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import image_items_1 from '../../assets/images/05.jpg';
 import image_items_2 from '../../assets/images/06.jpg';
 import image_items_3 from '../../assets/images/07.jpg';
 import image_items_4 from '../../assets/images/08.jpg';
-import ImageSlider, { Slide } from "react-auto-image-slider";
+import SimpleImageSlider from "react-simple-image-slider";
 
 const TopBanner = () => {
+    const [width, setWidth] = useState(0);
+    const banner = useRef(null);
+    // const [images, setImages] = useState([]);
+
+    // function handleResize() {
+    //     if (banner.current) {
+    //         const width = (banner.current).clientWidth;
+    //         setWidth(width);
+    //     }
+    // }
+
+    // useEffect(() => {
+    //     async function fetchImages() {
+    //         const response = await fetch('your-api-url');
+    //         const data = await response.json();
+    //         setImages(data.images);
+    //     }
+    //     fetchImages();
+    //     handleResize();
+    //     window.addEventListener("resize", handleResize);
+    //     return () => window.removeEventListener("resize", handleResize);
+    // }, []);
+
+
+    const images = [
+        { url: image_items_1 },
+        { url: image_items_2 },
+        { url: image_items_3 },
+        { url: image_items_4 },
+    ];
+
+    function handleResize() {
+        if (banner.current) {
+            const width = (banner.current).clientWidth;
+            setWidth(width);
+        }
+    }
+
+    useEffect(() => {
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
 
     return (
-        <div className="carousel w-full">
-            <ImageSlider effectDelay={500} autoPlayDelay={5000} >
-                <Slide>
-                    <img alt="img2" src={image_items_1} className='w-full h-96' />
-                </Slide>
-                <Slide>
-                    <img alt="img2" src={image_items_2} className='w-full h-96' />
-                </Slide>
-                <Slide>
-                    <img alt="img1" src={image_items_3} className='w-full h-96' />
-                </Slide>
-                <Slide>
-                    <img alt="img1" src={image_items_4} className='w-full h-96' />
-                </Slide>
-            </ImageSlider>
+        <div className="carousel w-full" ref={banner}>
+            <SimpleImageSlider
+                width={width}
+                height={504}
+                images={images}
+                // images={images.map(image => ({ url: image.url }))}
+                showBullets={true}
+                slideDuration={5.0}
+                showNavs={true}
+                autoPlay={true}
+                autoPlayDelay={3}
+            />
         </div>
     );
 };
