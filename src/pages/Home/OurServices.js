@@ -4,6 +4,7 @@ import { RiUserSettingsFill, RiHandHeartFill } from 'react-icons/ri';
 import { BsHeartPulseFill } from 'react-icons/bs';
 import { BiDonateBlood } from 'react-icons/bi';
 import ServiceCard from './ServiceCard';
+import { Link } from 'react-router-dom';
 
 const OurServices = () => {
     const services = [
@@ -45,7 +46,7 @@ const OurServices = () => {
         },
     ]
     return (
-        <div className='mt-12 text-center flex flex-col items-center '>
+        <div className='mt-16 text-center flex flex-col items-center '>
             <h1 className='text-5xl font-semibold text-black'>Our Services</h1>
             <h4 className='py-6 text-xl text-black'>With the touch of advanced technology, we are always at your side with the assurance of the latest health care.
             </h4>
@@ -57,6 +58,7 @@ const OurServices = () => {
                     image={service.image}
                 />)}
             </div>
+            <button className='mt-10 text-2xl font-medium bg-primary w-fit px-8 flex items-center justify-center py-4 rounded-xl text-white hover:bg-[#0ED3B0]'><Link to='/' >View All Service</Link></button>
         </div>
     );
 };

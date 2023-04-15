@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Welcome = () => {
     return (
-        <div className="hero mt-12">
+        <div className="hero mt-16">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className="text-center lg:text-left lg:ml-10 text-xl">
                     <h1 className="text-5xl font-semibold">Welcome to Joypurhat Diagnostic & Dialysis Centre</h1>
