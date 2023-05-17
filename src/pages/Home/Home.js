@@ -1,8 +1,9 @@
 import React from "react";
-import TopBanner from "./TopBanner";
-import Welcome from "./Welcome";
+import LatestNews from "./LatestNews";
 import MeetOurDoctors from "./MeetOurDoctors";
 import OurServices from "./OurServices";
+import TopBanner from "./TopBanner";
+import Welcome from "./Welcome";
 import WhyChooseUs from "./WhyChooseUs";
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
     <OurServices />
     <WhyChooseUs />
     <MeetOurDoctors />
+    <LatestNews />
   </div>;
 };
 
