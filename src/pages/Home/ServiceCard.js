@@ -3,7 +3,7 @@ import React from 'react';
 const ServiceCard = ({ name, image, description }) => {
     const shortDescription = description.slice(0, 100);
     return (
-        <div className="card w-96 bg-base-100 shadow-2xl mt-2">
+        <div className="card w-96 bg-base-100 shadow-2xl hover:shadow-black mt-2">
             <figure className="px-10 pt-10">
                 {image}
             </figure>
