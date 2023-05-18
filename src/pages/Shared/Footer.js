@@ -14,10 +14,16 @@ const Footer = () => {
                 </div>
                 <div>
                     <span className="footer-title">Contact Us</span>
-                    <span className="w-72">Sabujnagor, Posu Hospital Road, Amtoli, Joypurhat, Bangladesh.
+                    <span className="w-80">Sabujnagor, Posu Hospital Road, Amtoli, Joypurhat, Bangladesh.
                         <div className='py-[.5px]'>
                             <br /> General Enquiries:
                             <Link to='/' className='text-primary hover:text-[#0ED3B0] font-semibold'> joypurhatddc.com</Link>
+                        </div>
+                        <br />
+                        <div className='py-[.5px]'>
+                            Contact Number:
+                            <span className='text-primary hover:text-[#0ED3B0] font-semibold'> 01751004544</span>,
+                            <span className='text-primary hover:text-[#0ED3B0] font-semibold'> 01329003637</span>
                         </div>
                         <br />
                         Support:

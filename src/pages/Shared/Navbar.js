@@ -59,7 +59,7 @@ const Navbar = () => {
             alt="Joypurhat Diagnostic & Dialysis Centre"
             className="w-20 h-20"
           />
-          <h1 className="text-2xl font-black text-white">JDDC</h1>
+          <h1 className="text-xl font-black text-white">Joypurhat Diagnostic & Dialysis Centre</h1>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -132,7 +132,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/"
+              to="/contact-us"
               className={({ isActive }) =>
                 isActive ? " underline underline-offset-8 underline-white " : ""
               }
