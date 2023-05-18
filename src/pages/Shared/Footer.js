@@ -7,23 +7,25 @@ import Map from '../Home/Map';
 const Footer = () => {
     return (
         <>
-            <footer className="footer p-10 bg-gray-900 text-white">
+            <footer className="footer p-10 bg-gray-900 text-white flex flex-cols-3 items-start justify-between">
                 <div>
-                    <span className="footer-title">Services</span>
-                    <span className="link link-hover">Branding</span>
-                    <span className="link link-hover">Design</span>
-                    <span className="link link-hover">Marketing</span>
-                    <span className="link link-hover">Advertisement</span>
+                    <span className="footer-title">About Us</span>
+                    <span className="w-72">We are one of the best health clinics in town, certified and qualified doctors serving the community since.</span>
                 </div>
                 <div>
-                    <span className="footer-title">Company</span>
-                    <span className="link link-hover">About us</span>
-                    <span className="link link-hover">Contact</span>
-                    <span className="link link-hover">Jobs</span>
-                    <span className="link link-hover">Press kit</span>
+                    <span className="footer-title">Contact Us</span>
+                    <span className="w-72">Sabujnagor, Posu Hospital Road, Amtoli, Joypurhat, Bangladesh.
+                        <div className='py-[.5px]'>
+                            <br /> General Enquiries:
+                            <Link to='/' className='text-primary hover:text-[#0ED3B0] font-semibold'> joypurhatddc.com</Link>
+                        </div>
+                        <br />
+                        Support:
+                        <Link to='mailto:jdialysiscentre@gmail.com' className='text-primary hover:text-[#0ED3B0] font-semibold' > jdialysiscentre@gmail.com</Link>
+                    </span>
                 </div>
                 <div>
-                    <span>View Location</span>
+                    <span className='footer-title'>View Location</span>
                     <Map />
                 </div>
             </footer>
