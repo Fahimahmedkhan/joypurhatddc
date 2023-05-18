@@ -1,9 +1,9 @@
 import React from "react";
+import { AiFillContacts } from "react-icons/ai";
+import { GiDoctorFace, GiNewspaper } from "react-icons/gi";
+import { MdHome, MdMedicalServices } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
 import JdcLogo from "../../assets/logo/jddcLogo.svg";
-import { MdMedicalServices, MdHome } from "react-icons/md";
-import { GiDoctorFace, GiNewspaper } from "react-icons/gi";
-import { AiFillContacts } from "react-icons/ai";
 
 const Navbar = () => {
   return (
@@ -67,7 +67,6 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/"
-              GiDoctorFace
               className={({ isActive }) =>
                 isActive ? " underline underline-offset-8 underline-white " : ""
               }
@@ -104,8 +103,9 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive ? " underline underline-offset-8 underline-white " : ""
               }
-              AiFillContacts
+
             >
+              <AiFillContacts />
               Testimonials
             </NavLink>
           </li>

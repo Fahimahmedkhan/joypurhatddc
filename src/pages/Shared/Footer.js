@@ -2,6 +2,7 @@ import React from 'react';
 import { FaFacebookF, FaTwitter } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import JdcLogo from "../../assets/logo/jddcLogo.svg";
+import Map from '../Home/Map';
 
 const Footer = () => {
     return (
@@ -22,10 +23,8 @@ const Footer = () => {
                     <span className="link link-hover">Press kit</span>
                 </div>
                 <div>
-                    <span className="footer-title">Legal</span>
-                    <span className="link link-hover">Terms of use</span>
-                    <span className="link link-hover">Privacy policy</span>
-                    <span className="link link-hover">Cookie policy</span>
+                    <span>View Location</span>
+                    <Map />
                 </div>
             </footer>
             <footer className="footer px-10 py-4 border-t bg-gray-900 text-white border-base-300 flex items-center justify-between">
