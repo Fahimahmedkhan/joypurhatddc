@@ -1,7 +1,7 @@
 import React from 'react';
 import { BsFillCheckCircleFill } from 'react-icons/bs';
-import hospitalImage from '../../assets/images/hospital-image.jpg';
 import { Link } from 'react-router-dom';
+import hospitalImage from '../../assets/images/14.jpg';
 
 const Welcome = () => {
     return (
