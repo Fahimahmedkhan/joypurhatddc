@@ -1,5 +1,10 @@
 import React from 'react';
 import DoctorCard from './DoctorCard';
+import doctor1 from '../../assets/images/doctors/01.svg'
+import doctor2 from '../../assets/images/doctors/02.svg'
+import doctor3 from '../../assets/images/doctors/03.svg'
+import doctor4 from '../../assets/images/doctors/04.svg'
+import doctor5 from '../../assets/images/doctors/05.svg'
 
 const MeetOurDoctors = () => {
     const doctors = [
@@ -7,25 +12,31 @@ const MeetOurDoctors = () => {
             id: 1,
             name: 'Kaiya Kenter',
             designation: 'Gynecologist',
-            image: 'https://joypurhatddc.com/wp-content/uploads/2022/02/Rectangle-255.png'
+            image: doctor1
         },
         {
             id: 2,
             name: 'Jaylon Bergson',
             designation: 'Gynecologist',
-            image: 'https://joypurhatddc.com/wp-content/uploads/2022/02/Rectangle-259.png'
+            image: doctor2
         },
         {
             id: 3,
-            name: 'Tatiana Arcand',
+            name: 'Dr. Md. Mijanur Rahman',
             designation: 'Gynecologist',
-            image: 'https://joypurhatddc.com/wp-content/uploads/2022/02/Rectangle-260.png'
+            image: doctor3
         },
         {
             id: 4,
             name: 'Alfonso Saris',
             designation: 'Gynecologist',
-            image: 'https://joypurhatddc.com/wp-content/uploads/2022/02/Rectangle-261.png'
+            image: doctor4
+        },
+        {
+            id: 5,
+            name: 'Alfonso Saris',
+            designation: 'Gynecologist',
+            image: doctor5
         },
     ]
 
