@@ -10,33 +10,33 @@ const MeetOurDoctors = () => {
     const doctors = [
         {
             id: 1,
-            name: 'Kaiya Kenter',
-            designation: 'Gynecologist',
-            image: doctor1
+            name: 'Dr. Md. Sohrab Hossain',
+            designation: 'MBBS, BCS(H), D-CARD (BSMMU), MACP(USA)',
+            image: doctor5
         },
         {
             id: 2,
-            name: 'Jaylon Bergson',
-            designation: 'Gynecologist',
-            image: doctor2
-        },
-        {
-            id: 3,
-            name: 'Dr. Md. Mijanur Rahman',
-            designation: 'Gynecologist',
-            image: doctor3
-        },
-        {
-            id: 4,
-            name: 'Alfonso Saris',
-            designation: 'Gynecologist',
+            name: 'DR. Nur-Un-Nahar Nazme',
+            designation: 'MBBS, BCS(H), FCPS Consultant (Gyne & Obs)',
             image: doctor4
         },
         {
+            id: 3,
+            name: 'Dr. Md. Rabiul Alam',
+            designation: 'MBBS, BCS(H), MD(Nephrology) NIKDU, Dhaka',
+            image: doctor1
+        },
+        {
+            id: 4,
+            name: 'Dr. Md. Ashik Ahmead Jebal',
+            designation: 'MBBS, BCS, D-Ortho, Dhaka',
+            image: doctor2
+        },
+        {
             id: 5,
-            name: 'Alfonso Saris',
-            designation: 'Gynecologist',
-            image: doctor5
+            name: 'Dr. Md. Mizanur Rahman',
+            designation: 'MBBS (Dhaka), BCS(H), PGT(Surgery)',
+            image: doctor3
         },
     ]
 
