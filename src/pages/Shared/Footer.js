@@ -50,10 +50,9 @@ const Footer = () => {
                     <p>Copyright © 2023 - All right reserved by <Link to='https://www.linkedin.com/in/fahim-ahmed-khan-gorbo/' target="_blank" rel="noopener noreferrer" className='text-base text-[#0ED3B0] font-semibold hover:text-primary' >Fahim Ahmed Khan Gorbo</Link> & <Link to='https://www.linkedin.com/in/akash-sarkar-678623198/' target="_blank" rel="noopener noreferrer" className='text-base text-[#0ED3B0] font-semibold hover:text-primary'>Akash Sarkar</Link></p>
                 </div>
                 <div className="md:place-self-center md:justify-self-end">
-                    <div className="grid grid-flow-col gap-4">
+                    <Link className="grid grid-flow-col gap-4" target="_blank" rel="noopener noreferrer" to='https://www.facebook.com/JDIALYSISCENTRE'>
                         <FaFacebookF className="text-white text-3xl hover:text-primary cursor-pointer" />
-                        <FaTwitter className="text-white text-3xl hover:text-primary cursor-pointer" />
-                    </div>
+                    </Link>
                 </div>
             </footer>
         </>

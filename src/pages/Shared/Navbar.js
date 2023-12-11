@@ -34,13 +34,13 @@ const Navbar = () => {
               <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/">Services</NavLink>
+              <NavLink to="/services">Services</NavLink>
             </li>
             <li>
-              <NavLink to="/">Doctors</NavLink>
+              <NavLink to="/our-doctors">Doctors</NavLink>
             </li>
             <li>
-              <NavLink to="/">Testimonials</NavLink>
+              <NavLink to="/testimonials">Testimonials</NavLink>
             </li>
             <li>
               <NavLink to="/">About Us</NavLink>
@@ -49,7 +49,7 @@ const Navbar = () => {
               <NavLink to="/">News</NavLink>
             </li>
             <li>
-              <NavLink to="/">Contact Us</NavLink>
+              <NavLink to="/contact-us">Contact Us</NavLink>
             </li>
           </ul>
         </div>
@@ -77,7 +77,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/"
+              to="/services"
               className={({ isActive }) =>
                 isActive ? " underline underline-offset-8 underline-white " : ""
               }
@@ -88,7 +88,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/"
+              to="/our-doctors"
               className={({ isActive }) =>
                 isActive ? " underline underline-offset-8 underline-white " : ""
               }
@@ -99,7 +99,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/"
+              to="/testimonials"
               className={({ isActive }) =>
                 isActive ? " underline underline-offset-8 underline-white " : ""
               }

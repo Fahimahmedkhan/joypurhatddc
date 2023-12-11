@@ -58,7 +58,7 @@ const MeetOurDoctors = () => {
 
 
     return (
-        <div className='mt-16 text-center flex flex-col items-center '>
+        <div className='mt-16 text-center flex flex-col items-center'>
             <h1 className='text-5xl font-semibold text-black'>Meet Our Doctors</h1>
             <h4 className='py-6 text-xl text-black'>We are one of the best health clinics in town, with over 25 certified and qualified doctors serving the community since 1998.
             </h4>

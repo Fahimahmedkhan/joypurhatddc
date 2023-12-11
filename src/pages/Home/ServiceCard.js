@@ -10,7 +10,7 @@ const ServiceCard = ({ name, image, description }) => {
             <div className="card-body items-center text-center">
                 <h2 className="card-title">{name}</h2>
                 <p>{shortDescription}...</p>
-                <button className='text-primary mt-4'>Learn More</button>
+                <label htmlFor='' className='mb-10 text-xl font-medium bg-primary w-fit mt-4 px-8 flex items-center justify-center py-2 rounded-xl text-white hover:bg-[#0ED3B0] cursor-pointer'>Learn More</label>
             </div>
         </div>
     );
